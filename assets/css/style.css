@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url(_variaveis.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--dmSans);
+    background: #eeeded;
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    padding: 0 1.5625rem;
+
+    height: 100vh;
+}
+
+/* Header */
+.conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho {
+    padding-top: 2.75rem;
+}
+
+.icon__backButton {
+    background: var(--azul-bebe);
+    box-shadow: 0rem 1.25rem 2.5rem rgba(0, 0, 0, 0.15);
+    border-radius: .875rem;
+    
+    cursor: pointer;
+
+    color: var(--branco);
+    font-size: 1.3rem;
+
+    padding: .9375rem;
+
+    transition: .8s;
+}
+
+.icon__backButton:hover {
+    background-color: var(--azul-bondi);
+}
+
+/* Main */
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__subtitle {
+    color: var(--azul-bebe);
+
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 2.9375rem;
+
+    margin-top: .75rem;
+}
+
+.form__logotipo {
+    margin-top: .8125rem;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-top: 4.9375rem;
+}
+
+.form__email, .form__password {
+    background-color: var(--branco);
+    border-radius: 24px;
+    border: 1px solid;
+
+    color: var(--marrom);
+    font-family: var(--dmSans);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+
+    opacity: 0.4;
+
+    padding-left: 1.5625rem;
+
+    width: 19.0625rem;
+    height: 3.625rem;
+
+    filter: drop-shadow(0px 16px 60px rgba(78, 79, 114, 0.08));
+}
+
+.form__email, .form__password:focus {
+    outline: 0;
+}
+
+.form__mensagem, .backbutton__mensagem {
+    color: var(--vermelho);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.form__button {
+    background: var(--azul-bebe);
+    border: none;
+    border-radius: 1.5rem;
+
+    cursor: pointer;
+
+    color: var(--branco);
+    font-family: var(--dmSans);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+
+    width: 19.0625rem;
+    height: 3.625rem;
+
+    margin-top: 3.9375rem;
+
+    transition: .8s;
+}
+
+.form__button:hover {
+    background: var(--azul-bondi);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer__forgotPassword {
+    color: var(--marrom-claro);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+
+    transition: .8s;
+}
+
+.footer__forgotPassword:hover{
+    color: var(--azul-bondi);
+}
+
+.backbutton__mensagem {
+    padding-top: 5rem;
+}
+
+@media screen and (max-width: 374px) {
+    .form__email, .form__password {
+        width: 16.875rem;
+    }
+
+    .form__button {
+        width: 16.875rem;
+    }
+}
