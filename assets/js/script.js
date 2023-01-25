@@ -61,3 +61,9 @@ forgotPassword.addEventListener("click", () => {
         window.location.reload(true);
     }, 3000);
 });
+
+const btnDarkMode = document.querySelector("#btn");
+
+btnDarkMode.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+})

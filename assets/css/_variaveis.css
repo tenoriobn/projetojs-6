@@ -3,6 +3,10 @@
     --azul-bebe: #29B6F6;
     --azul-bondi: #297b9d;
     --branco: #ffffff;
+
+    --color-bg: #eeeded;
+    --colorBtn: #000000;
+
     --marrom: #2C2929;
     --marrom-claro: #424242;
     --preto: #000000;
@@ -10,4 +14,7 @@
 
     /* Font Family */
     --dmSans: 'DM Sans', sans-serif;
+
+    /* Icon */
+    --icon-lua: url(../img/icon-darkMode.png);
 }
